@@ -52,7 +52,7 @@ class ProfileSchema(ma.Schema):
 profile_schema = ProfileSchema()
 profiles_schema = ProfileSchema(many=True)
 
-
+# Starting EndPoints
 @app.route('/', methods=["GET"])
 def home():    
     return "<h1>Hot Not Hot Flask API</h1>"
