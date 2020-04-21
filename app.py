@@ -25,7 +25,7 @@ class Profile(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     description = db.Column(db.String(100), nullable=False)
-    profileImgUrl = db.Column(db.String(200), nullable=False)
+    profileImgUrl = db.Column(db.String(500), nullable=False)
     password = db.Column(db.String(20), nullable=False)
     gender = db.Column(db.String(10), nullable=False)
     email = db.Column(db.String(60), nullable=False)
